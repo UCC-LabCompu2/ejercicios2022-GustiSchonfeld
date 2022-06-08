@@ -44,3 +44,18 @@ function convertirGR(id) {
     document.getElementById(elementId:"grados").value = grad;
     document.getElementById(elementId:"radianes").value = rad;
 }
+
+function mostrar_ocultar(valorMO) {
+    if (valorMO=="val_mostrar"){
+        document.getElementById(elementId:"divMO").style.display = 'block';
+    } else if (valorMO=="val_ocultar"){
+        document.getElementById(elementId:"divMO").style.display = 'none';
+    }
+}
+
+function calcularSuma(){
+    var num1, num2;
+    num1=Number(document.getElementsByName(elementName:"sum_num1")[0].value);
+    num2=document.getElementsByName(elementName:"sum_num2")[0].value;
+    document.getElementsByName(elementName:"sum_total")[0].value= num1 + Number(num2);
+}
